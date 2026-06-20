@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Preview</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-wrap: wrap; }
+        .img-container { margin: 10px; border: 1px solid #ccc; padding: 10px; width: 300px; text-align: center; }
+        img { max-width: 100%; height: auto; }
+        p { word-wrap: break-word; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <script>
+        const files = [
+            "WhatsApp Image 2026-06-17 at 11.46.35.jpeg",
+            "WhatsApp Image 2026-06-17 at 11.46.38.jpeg",
+            "WhatsApp Image 2026-06-17 at 11.46.40.jpeg",
+            "WhatsApp Image 2026-06-17 at 11.46.43.jpeg",
+            "WhatsApp Image 2026-06-17 at 11.46.45.jpeg",
+            "WhatsApp Image 2026-06-17 at 11.46.49.jpeg",
+            "WhatsApp Image 2026-06-17 at 11.46.50.jpeg",
+            "WhatsApp Image 2026-06-17 at 11.46.52.jpeg",
+            "WhatsApp Image 2026-06-17 at 11.47.02.jpeg",
+            "WhatsApp Image 2026-06-17 at 11.47.03.jpeg",
+            "WhatsApp Image 2026-06-17 at 11.47.13.jpeg",
+            "WhatsApp Image 2026-06-17 at 11.47.31.jpeg",
+            "WhatsApp Image 2026-06-17 at 11.47.33.jpeg",
+            "WhatsApp Image 2026-06-17 at 11.47.35.jpeg",
+            "WhatsApp Image 2026-06-17 at 11.47.38.jpeg",
+            "WhatsApp Image 2026-06-17 at 11.47.51.jpeg",
+            "WhatsApp Image 2026-06-17 at 11.47.54.jpeg",
+            "WhatsApp Image 2026-06-17 at 11.47.56.jpeg",
+            "WhatsApp Image 2026-06-17 at 11.47.57.jpeg"
+        ];
+        
+        files.forEach(file => {
+            document.write('<div class="img-container">');
+            document.write('<img src="our-work/' + file + '" />');
+            document.write('<p>' + file + '</p>');
+            document.write('</div>');
+        });
+    </script>
+</body>
+</html>
