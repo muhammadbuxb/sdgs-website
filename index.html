@@ -1,6 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
-    <style>
+ <style>
     /* Responsive Fix for Hero Section Overlap on Mobile/Tablet */
     @media only screen and (max-width: 991px) {
         .slider-area .hero__caption {
@@ -11,6 +11,9 @@
             box-shadow: 0px 5px 20px rgba(0,0,0,0.05);
             position: relative;
             z-index: 2;
+            
+            /* THIS IS THE NEW FIX: Pushes the text box down below the mobile header */
+            margin-top: 80px !important; 
         }
         
         /* Adjust the spacing of the buttons for mobile */
@@ -29,6 +32,10 @@
 
     /* Extra adjustments for very small phone screens */
     @media only screen and (max-width: 575px) {
+        .slider-area .hero__caption {
+             /* Slightly more push-down on tiny screens if needed */
+             margin-top: 100px !important;
+        }
         .slider-area .hero__caption h1 {
             font-size: 32px !important; /* Makes the heading fit better */
             line-height: 1.3 !important;
@@ -178,7 +185,17 @@
                         <div class="col-xl-5 col-lg-5 col-md-6 col-sm-7">
                             <div class="hero__caption">
                                 <h1 data-animation="fadeInUp" data-delay=".6s">Empowering Communities,<br> Transforming Lives<br> in Sindh.</h1>
-                                <P data-animation="fadeInUp" data-delay=".8s" >SDGS Welfare Organization is a grassroots social welfare NGO. Guided by the Sustainable Development Goals (SDGs), we are dedicated to building a more equitable and resilient future for our people. We are committed to providing essential healthcare, quality education, and rapid relief to those who need it most across Sindh, Pakistan.</P>
+                                <!-- <P data-animation="fadeInUp" data-delay=".8s" >SDGS Welfare Organization is a grassroots social welfare NGO. Guided by the Sustainable Development Goals (SDGs), we are dedicated to building a more equitable and resilient future for our people. We are committed to providing essential healthcare, quality education, and rapid relief to those who need it most across Sindh, Pakistan.</P> -->
+                                
+                                <!-- Full text for Desktop/Laptop (Hides on smaller screens) -->
+<p class="d-none d-lg-block" data-animation="fadeInUp" data-delay=".8s">
+    SDGS Welfare Organization is a grassroots social welfare NGO. Guided by the Sustainable Development Goals (SDGs), we are dedicated to building a more equitable and resilient future for our people. We are committed to providing essential healthcare, quality education, and rapid relief to those who need it most across Sindh, Pakistan.
+</p>
+
+<!-- Shorter text for Mobile/Tablets (Hides on large desktop screens) -->
+<p class="d-block d-lg-none" data-animation="fadeInUp" data-delay=".8s">
+    SDGS is a grassroots NGO providing essential healthcare, quality education, and rapid relief across Sindh to build a more equitable and resilient future.
+</p>
                                 <!-- Hero-btn -->
                                 <div class="hero__btn">
                                     <a href="contact.html" class="btn hero-btn mb-10"  data-animation="fadeInLeft" data-delay=".8s">Donate Now</a>
