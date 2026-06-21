@@ -1,5 +1,43 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
+    <style>
+    /* Responsive Fix for Hero Section Overlap on Mobile/Tablet */
+    @media only screen and (max-width: 991px) {
+        .slider-area .hero__caption {
+            /* Adds a white overlay box behind the text so it is readable */
+            background-color: rgba(255, 255, 255, 0.92) !important;
+            padding: 30px !important;
+            border-radius: 15px;
+            box-shadow: 0px 5px 20px rgba(0,0,0,0.05);
+            position: relative;
+            z-index: 2;
+        }
+        
+        /* Adjust the spacing of the buttons for mobile */
+        .slider-area .hero__btn {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .slider-area .hero__btn .btn {
+            margin-left: 0 !important;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    /* Extra adjustments for very small phone screens */
+    @media only screen and (max-width: 575px) {
+        .slider-area .hero__caption h1 {
+            font-size: 32px !important; /* Makes the heading fit better */
+            line-height: 1.3 !important;
+        }
+        .slider-area .hero__caption p {
+            font-size: 15px !important;
+        }
+    }
+</style>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -177,7 +215,9 @@
     </div>
     <!-- slider Area End-->
     <!--? Services Area Start -->
-    <div class="service-area section-padding30">
+    <!-- <div class="service-area section-padding30"> -->
+    
+<div class="service-area section-padding30" style="padding-bottom: 10px !important;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
@@ -188,7 +228,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6 mb-50" style="display: flex;">
                     <div class="single-cat text-center" style="width: 100%; display: flex; flex-direction: column; justify-content: center;">
                         <div class="cat-icon">
@@ -222,12 +262,53 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+       
+            <div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-6 mb-50" style="display: flex;">
+        <div class="single-cat text-center" style="width: 100%; display: flex; flex-direction: column; justify-content: center;">
+            <div class="cat-icon">
+                <span class="flaticon-null-1"></span>
             </div>
+            <div class="cat-cap">
+                <h5><a href="services.html">Emergency Medical Relief</a></h5>
+                <p><strong>Bridging the Gap:</strong> We organize free medical camps and utilize mobile medical vans to bring essential healthcare, diagnostics, and medicines directly to vulnerable communities in remote and disaster-affected areas.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6 col-sm-6 mb-50" style="display: flex;">
+        <div class="single-cat active text-center" style="width: 100%; display: flex; flex-direction: column; justify-content: center;">
+            <div class="cat-icon">
+                <span class="flaticon-think"></span>
+            </div>
+            <div class="cat-cap">
+                <h5><a href="services.html">Disaster Response & Social Welfare</a></h5>
+                <p><strong>Standing Resilient:</strong> From emergency food rations and survival supplies to heat wave relief camps, our rapid response teams provide a vital lifeline to families facing climate adversity and sudden displacement.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6 col-sm-6 mb-50" style="display: flex;">
+        <div class="single-cat text-center" style="width: 100%; display: flex; flex-direction: column; justify-content: center;">
+            <div class="cat-icon">
+                <span class="flaticon-gear"></span>
+            </div>
+            <div class="cat-cap">
+                <h5><a href="services.html">Education for the Future</a></h5>
+                <p><strong>Nurturing Minds:</strong> We empower the next generation to break the cycle of poverty by funding local makeshift schools, providing learning resources, and fostering environmental responsibility through youth tree-planting campaigns.</p>
+            </div>
+        </div>
+    </div>
+</div>
+       
         </div>
     </div>
     <!-- Services Area End -->
     <!--? About Law Start-->
-    <section class="about-low-area section-padding2">
+    <!-- <section class="about-low-area section-padding2"> -->
+        <!--? About Law Start-->
+    <section class="about-low-area" style="padding-top: 60px !important; padding-bottom: 20px !important;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-10">
@@ -258,7 +339,8 @@
     </section>
     <!-- About Law End-->
         <!-- Our Projects Start -->
-    <div class="our-cases-area section-padding30">
+    <!-- <div class="our-cases-area section-padding30"> -->
+    <div class="our-cases-area" style="padding-top: 40px !important; padding-bottom: 20px !important;"></div> 
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
@@ -269,7 +351,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="single-cases mb-40">
                         <div class="cases-img">
@@ -330,12 +412,87 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+
+            <div class="row">
+    <!-- Project 1 -->
+    <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="single-cases mb-40">
+            <div class="cases-img">
+                <a href="project_details.html?id=medical-camps"><img src="assets/img/gallery/project_flood_camp.jpeg" alt="" style="width: 100%; height: 250px; object-fit: cover;"></a>
             </div>
+            <div class="cases-caption" style="padding: 30px;">
+                <h3><a href="project_details.html?id=medical-camps">Medical Camp for Flood Effected areas of Sindh 2022</a></h3>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Project 2 -->
+    <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="single-cases mb-40">
+            <div class="cases-img">
+                <a href="project_details.html?id=emergency-relief"><img src="assets/img/gallery/project_relief.jpeg" alt="" style="width: 100%; height: 250px; object-fit: cover;"></a>
+            </div>
+            <div class="cases-caption" style="padding: 30px;">
+                <h3><a href="project_details.html?id=emergency-relief">Disaster Response & Social Welfare</a></h3>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Project 3 -->
+    <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="single-cases mb-40">
+            <div class="cases-img">
+                <a href="project_details.html?id=education-initiatives"><img src="assets/img/gallery/project_education.jpeg" alt="" style="width: 100%; height: 250px; object-fit: cover;"></a>
+            </div>
+            <div class="cases-caption" style="padding: 30px;">
+                <h3><a href="project_details.html?id=education-initiatives">Students Supported in Local Education Initiatives</a></h3>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Project 4 -->
+    <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="single-cases mb-40">
+            <div class="cases-img">
+                <a href="project_details.html?id=flood-medical"><img src="assets/img/gallery/project_flood_medical.jpeg" alt="" style="width: 100%; height: 250px; object-fit: cover;"></a>
+            </div>
+            <div class="cases-caption" style="padding: 30px;">
+                <h3><a href="project_details.html?id=flood-medical">Wheelchair Distribution and Support for Disabled Persons</a></h3>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Project 5 -->
+    <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="single-cases mb-40">
+            <div class="cases-img">
+                <a href="project_details.html?id=ramzan-rashan"><img src="assets/img/gallery/project_ramzan_rashan.jpeg" alt="" style="width: 100%; height: 250px; object-fit: cover;"></a>
+            </div>
+            <div class="cases-caption" style="padding: 30px;">
+                <h3><a href="project_details.html?id=ramzan-rashan">Rashan Distribution in the Month of Ramzan</a></h3>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Project 6 -->
+    <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="single-cases mb-40">
+            <div class="cases-img">
+                <a href="project_details.html?id=tree-plantation"><img src="assets/img/gallery/project_tree_plantation.jpeg" alt="" style="width: 100%; height: 250px; object-fit: cover;"></a>
+            </div>
+            <div class="cases-caption" style="padding: 30px;">
+                <h3><a href="project_details.html?id=tree-plantation">Tree Plantations for Green Environment</a></h3>
+            </div>
+        </div>
+    </div>
+</div>
         </div>
     </div>
     <!-- Our Projects End -->
         <!-- Our Workings Start -->
-    <section class="featured-job-area section-padding30 section-bg2" data-background="assets/img/gallery/section_bg03.png">
+    <!-- <section class="featured-job-area section-padding30 section-bg2" data-background="assets/img/gallery/section_bg03.png"> -->
+    <section class="featured-job-area section-bg2" data-background="assets/img/gallery/section_bg03.png" style="padding-top: 60px !important; padding-bottom: 20px !important;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-7 col-lg-9 col-md-10 col-sm-12">
@@ -400,14 +557,16 @@
     </section>
     <!-- Our Workings End -->
     <!--? Team Ara Start -->
-    <div class="team-area pt-160 pb-160">
+    <!-- <div class="team-area pt-160 pb-160"> -->
+    <!--? Team Ara Start -->
+<div class="team-area" style="padding-top: 60px !important; padding-bottom: 40px !important;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
                     <!-- Section Tittle -->
                     <div class="section-tittle section-tittle2 text-center mb-70">
                         <span>What we are doing</span>
-                        <h2>Our Expert Volunteer Alwyes ready</h2>
+                        <h2>Our Expert Volunteer Always ready</h2>
                     </div> 
                 </div>
             </div>
@@ -424,7 +583,7 @@
                             </ul>
                         </div>
                         <div class="team-caption">
-                            <h3><a href="instructor.html">Bruce Roberts</a></h3>
+                            <h3><a href="instructor.html">Nasir Morai</a></h3>
                             <p>Volunteer leader</p>
                         </div>
                     </div>
@@ -441,7 +600,7 @@
                             </ul>
                         </div>
                         <div class="team-caption">
-                            <h3><a href="instructor.html">Robart Rechard</a></h3>
+                            <h3><a href="instructor.html">Nasir Morai</a></h3>
                             <p>Volunteer leader</p>
                         </div>
                     </div>
@@ -458,7 +617,7 @@
                             </ul>
                         </div>
                         <div class="team-caption">
-                            <h3><a href="instructor.html">Brendon Tailor</a></h3>
+                            <h3><a href="instructor.html">Nasir Morai</a></h3>
                             <p>Volunteer leader</p>
                         </div>
                     </div>
